@@ -5,8 +5,8 @@ def main():
     fib_num = int(input("Insert a number for [No. 2)] Fibonacci task: "))
     rev_str = input("Insert a word for [No. 5)] reverse string task: ")
 
-    # 1)
-    def first_task():
+    # 1) First task
+    def iteration_proof():
         # CLI spacing
         print("")
 
@@ -19,10 +19,10 @@ def main():
         print(f"The sum result is: {sum}.")
 
     # Call task
-    first_task()
+    iteration_proof()
 
-    # 2)
-    def second_task(num):
+    # 2) Second task
+    def fibonacci_calculation(num):
         # CLI spacing
         print("")
 
@@ -42,10 +42,10 @@ def main():
         else:
             return print(f"Selected number {num} IS NOT a Fibonacci number!")
     # Call task
-    second_task(fib_num)
+    fibonacci_calculation(fib_num)
 
-    # 3)
-    def third_task():
+    # 3) Third task
+    def revenue_treatning():
         # CLI spacing
         print("")
 
@@ -70,10 +70,10 @@ def main():
         print(f"Number of days which the daily billing value was higher than the average: {day_count}.")    
     
     # Call task
-    third_task()
+    revenue_treatning()
 
-    # 4)
-    def fourth_task(**info):
+    # 4) Fourth task
+    def participation_percentage(**info):
         # CLI spacing
         print("")
 
@@ -91,10 +91,10 @@ def main():
             print(f"{state} - {percentage:.2f}%")
 
     # Call task
-    fourth_task(SP=67836.43, RJ=36678.66, MG=29229.88, ES=27165.48, Outros=19849.53)
+    participation_percentage(SP=67836.43, RJ=36678.66, MG=29229.88, ES=27165.48, Outros=19849.53)
 
-    # 5)
-    def fifth_task(string):
+    # 5) Fifth task
+    def reverse_string(string):
         # CLI spacing
         print("")
         
@@ -107,7 +107,7 @@ def main():
         print(f"Reversed chosen word: {reversed_str}")
 
     # Call task
-    fifth_task(rev_str)
+    reverse_string(rev_str)
 
 if __name__ == "__main__":
     main()
