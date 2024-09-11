@@ -94,16 +94,15 @@ def main():
     participation_percentage(SP=67836.43, RJ=36678.66, MG=29229.88, ES=27165.48, Outros=19849.53)
 
     # 5) Fifth task
-    def reverse_string(string):
+    def reverse_string(str):
         # CLI spacing
         print("")
         
-        reversed_str = []
+        reversed_str = ""
 
-        for i in range(len(string) - 1, -1, -1):
-            reversed_str.append(string[i])
+        for i in range(len(str) - 1, -1, -1):
+            reversed_str += str[i]
         
-        reversed_str = "".join(reversed_str)
         print(f"Reversed chosen word: {reversed_str}")
 
     # Call task
